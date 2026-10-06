@@ -10,4 +10,4 @@ almacenar(N, [H|T]):-
     % guarda residuo de div entre 10 en H
     H is N mod 10,
     N1 is N // 10,
-    almacenar(T, N1).
+    almacenar(N1, T).

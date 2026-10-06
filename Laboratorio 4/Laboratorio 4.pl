@@ -1,9 +1,10 @@
 % Descomponer un valor entero y hacerlo una lista dígito por dígito
 
-almacenar(0, []).
+almacenar(0, []):- !.
 
 almacenar(N, [N]):-
-    N =< 9.
+    N =< 9,
+    !.
 
 almacenar(N, [H|T]):-
     N >= 10,
